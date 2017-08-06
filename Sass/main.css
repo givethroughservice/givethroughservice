@@ -1,0 +1,116 @@
+.blue, a, a:visited {
+  color: #34338f; }
+
+.green, a:hover {
+  color: #add14d; }
+
+body {
+  background-color: #2a2975;
+  overflow-x: hidden; }
+
+p {
+  font-family: "Lato"; }
+
+a:hover {
+  text-decoration: none; }
+
+.navbar {
+  background-color: white; }
+
+.navbar .navbar-collapse {
+  border-color: #34338f; }
+
+.navbar-brand {
+  padding-left: 100px; }
+
+.nav-index {
+  font-size: 22px;
+  margin-right: 100px; }
+
+.navbar .navbar-nav > .active > a {
+  background-color: #add14d;
+  border-bottom: none; }
+  .navbar .navbar-nav > .active > a:hover {
+    background-color: #add14d; }
+
+.navbar-nav a {
+  color: #34338f;
+  font-family: "Courgette"; }
+
+ul.nav a {
+  border-radius: 5px; }
+  ul.nav a:hover {
+    background-color: #add14d; }
+
+.navbar .navbar-toggle {
+  border-color: #34338f; }
+  .navbar .navbar-toggle .icon-bar {
+    background-color: #34338f; }
+  .navbar .navbar-toggle:hover {
+    background-color: #34338f; }
+    .navbar .navbar-toggle:hover .icon-bar {
+      background-color: white; }
+
+#page-title {
+  color: white;
+  margin-top: 30px; }
+  #page-title h1 {
+    font-family: "Courgette", cursive;
+    font-size: 45px; }
+
+#motto, #founded, #sendoff {
+  margin-top: 30px; }
+
+#motto-box, #founded-box, #sendoff-box {
+  background-color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 20px; }
+
+#video-box {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  border: 2px solid #add14d;
+  height: 400px;
+  margin-top: 30px; }
+  #video-box p {
+    margin-top: 100px; }
+
+#founded-box p {
+  text-indent: -10px; }
+  @media (max-width: 768px) {
+    #founded-box p {
+      text-align: center; } }
+#founded-box i {
+  color: #2a2975; }
+#founded-box #founded-p {
+  text-align: left;
+  text-indent: 0px; }
+
+.charity-list {
+  margin-top: 35px; }
+
+@media (min-width: 768px) {
+  .charity-list-2 {
+    margin-top: 35px; } }
+
+#and-more {
+  font-size: 25px; }
+
+#logo-banner {
+  background-color: white;
+  height: 275px;
+  margin-top: 30px; }
+  #logo-banner img {
+    display: inline;
+    padding: 15px; }
+
+#ladybird {
+  margin-left: 10%; }
+
+#sendoff-box a {
+  font-size: 20px; }
+
+#gallery {
+  margin-top: 30px; }

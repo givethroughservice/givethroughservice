@@ -1,0 +1,123 @@
+@import components.sass
+@import mixins.sass
+
+body
+	background-color: #2a2975
+	overflow-x: hidden
+
+p
+	font-family: "Lato"
+
+a
+	@extend .blue
+	&:hover
+		@extend .green
+		text-decoration: none
+	&:visited
+		@extend .blue
+
+.navbar
+	background-color: #fff
+
+.navbar .navbar-collapse
+	border-color: #34338f
+
+.navbar-brand
+	padding-left: 100px
+
+.nav-index
+	font-size: 22px
+	margin-right: 100px
+
+.navbar .navbar-nav>.active>a
+	background-color: #add14d
+	border-bottom: none
+	&:hover
+		background-color: #add14d
+
+.navbar-nav
+	a
+		color: #34338f
+		font-family: "Courgette"
+
+ul.nav a
+	border-radius: 5px
+	&:hover
+		background-color: #add14d
+
+.navbar .navbar-toggle
+	border-color: #34338f
+	.icon-bar
+		background-color: #34338f
+	&:hover
+		background-color: #34338f
+		.icon-bar
+			background-color: #fff
+
+#page-title
+	color: #fff
+	margin-top: 30px
+	h1
+		font-family: "Courgette", cursive
+		font-size: 45px
+
+#motto, #founded, #sendoff
+	margin-top: 30px
+
+#motto-box
+	background-color: #fff
+	border-radius: 5px
+	font-size: 18px
+	padding: 20px
+
+#video-box
+	width: 80%
+	margin: 0 auto
+	background-color: #fff
+	border: 2px solid #add14d
+	height: 400px
+	margin-top: 30px
+	p
+		margin-top: 100px
+
+#founded-box
+	@extend #motto-box
+	p
+		text-indent: -10px
+		@media (max-width: 768px)
+			text-align: center
+	i
+		color: #2a2975
+	#founded-p
+		text-align: left
+		text-indent: 0px
+
+.charity-list
+	margin-top: 35px
+
+
+.charity-list-2
+	@media (min-width: 768px)
+		margin-top: 35px
+
+#and-more
+	font-size: 25px
+
+#logo-banner
+	background-color: #fff
+	height: 275px
+	margin-top: 30px
+	img
+		display: inline
+		padding: 15px
+
+#ladybird
+	margin-left: 10%
+
+#sendoff-box
+	@extend #motto-box
+	a
+		font-size: 20px
+
+#gallery
+	margin-top: 30px
