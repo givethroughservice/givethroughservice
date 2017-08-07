@@ -4,6 +4,10 @@
 .green, a:hover {
   color: #add14d; }
 
+@font-face {
+  font-family: "Painted Paradise";
+  src: url("../fonts/Painted Paradise.ttf") format("truetype"); }
+
 body {
   background-color: #2a2975;
   overflow-x: hidden; }
@@ -35,7 +39,8 @@ a:hover {
 
 .navbar-nav a {
   color: #34338f;
-  font-family: "Courgette"; }
+  font-family: "Painted Paradise";
+  letter-spacing: 1px; }
 
 ul.nav a {
   border-radius: 5px; }
@@ -55,8 +60,9 @@ ul.nav a {
   color: white;
   margin-top: 30px; }
   #page-title h1 {
-    font-family: "Courgette", cursive;
-    font-size: 45px; }
+    font-family: "Painted Paradise", cursive;
+    font-size: 45px;
+    letter-spacing: 2px; }
 
 #motto, #founded, #sendoff {
   margin-top: 30px; }
@@ -67,14 +73,14 @@ ul.nav a {
   font-size: 18px;
   padding: 20px; }
 
-#video-box {
+#video-box, #gallery-box {
   width: 80%;
   margin: 0 auto;
   background-color: white;
   border: 2px solid #add14d;
   height: 400px;
   margin-top: 30px; }
-  #video-box p {
+  #video-box p, #gallery-box p {
     margin-top: 100px; }
 
 #founded-box p {
@@ -112,5 +118,5 @@ ul.nav a {
 #sendoff-box a {
   font-size: 20px; }
 
-#gallery {
-  margin-top: 30px; }
+#gallery-box p {
+  margin-top: 100px; }
