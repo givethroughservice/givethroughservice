@@ -19,17 +19,26 @@ a:hover {
   text-decoration: none; }
 
 .navbar {
-  background-color: white; }
+  background-color: white;
+  border-bottom: 4px solid #add14d;
+  height: 60px;
+  transition: all 0.5s ease-in-out; }
 
 .navbar .navbar-collapse {
   border-color: #34338f; }
 
 .navbar-brand {
-  padding-left: 100px; }
+  padding-left: 100px;
+  margin-top: -8px; }
+  .navbar-brand img {
+    transition: all 0.5s ease-in-out; }
 
 .nav-index {
-  font-size: 22px;
-  margin-right: 100px; }
+  font-size: 26px;
+  margin-right: 100px;
+  transition: all 0.5s ease-in-out; }
+  .nav-index li {
+    padding-right: 20px; }
 
 .navbar .navbar-nav > .active > a {
   background-color: #add14d;
@@ -37,6 +46,9 @@ a:hover {
   .navbar .navbar-nav > .active > a:hover {
     background-color: #add14d; }
 
+.navbar-nav li {
+  padding-top: 25px;
+  transition: all 0.5s ease-in-out; }
 .navbar-nav a {
   color: #34338f;
   font-family: "Painted Paradise";
@@ -56,9 +68,18 @@ ul.nav a {
     .navbar .navbar-toggle:hover .icon-bar {
       background-color: white; }
 
+.scrolled-nav {
+  height: 40px; }
+  .scrolled-nav .navbar-brand img {
+    width: 90px; }
+  .scrolled-nav .nav-index {
+    font-size: 22px; }
+  .scrolled-nav .navbar-nav li {
+    padding-top: 15px; }
+
 #page-title {
   color: white;
-  margin-top: 30px; }
+  margin-top: 90px; }
   #page-title h1 {
     font-family: "Painted Paradise", cursive;
     font-size: 45px;
@@ -83,6 +104,17 @@ ul.nav a {
   #video-box p, #gallery-box p {
     margin-top: 100px; }
 
+#logo-banner {
+  background-color: white;
+  height: 140px;
+  margin-top: 30px; }
+  #logo-banner img {
+    display: inline;
+    padding: 5px 15px; }
+
+#ladybird {
+  margin-left: 19%; }
+
 #founded-box p {
   text-indent: -10px; }
   @media (max-width: 768px) {
@@ -103,17 +135,6 @@ ul.nav a {
 
 #and-more {
   font-size: 25px; }
-
-#logo-banner {
-  background-color: white;
-  height: 275px;
-  margin-top: 30px; }
-  #logo-banner img {
-    display: inline;
-    padding: 15px; }
-
-#ladybird {
-  margin-left: 10%; }
 
 #sendoff-box a {
   font-size: 20px; }
