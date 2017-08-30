@@ -39,7 +39,7 @@ a:hover {
   border-color: #34338f; }
 
 .navbar-brand {
-  padding-left: 100px;
+  padding-left: 15%;
   margin-top: -8px; }
   .navbar-brand img {
     transition: all 0.5s ease-in-out; }
@@ -51,6 +51,9 @@ a:hover {
   .nav-index li {
     padding-right: 20px;
     margin-bottom: 5px; }
+    @media (max-width: 768px) {
+      .nav-index li a {
+        background-color: white; } }
 
 .navbar .navbar-nav > .active > a {
   background-color: #add14d;
@@ -62,7 +65,7 @@ a:hover {
   padding-top: 20px; }
 .navbar-nav a {
   color: #34338f;
-  font-family: "Delius";
+  font-family: "Painted Paradise";
   letter-spacing: 1px;
   transition: all 0.3s ease-in-out; }
 
@@ -83,7 +86,7 @@ ul.nav a {
 .scrolled-nav {
   height: 40px; }
   .scrolled-nav .navbar-brand img {
-    width: 90px; }
+    width: 120px; }
   .scrolled-nav .nav-index {
     font-size: 22px; }
   .scrolled-nav .navbar-nav li {
@@ -96,6 +99,12 @@ ul.nav a {
     font-family: "Painted Paradise", cursive;
     font-size: 45px;
     letter-spacing: 2px; }
+
+#title-img {
+  border-radius: 5px; }
+
+.darkImg {
+  filter: brightness(50%); }
 
 #motto, #founded, #sendoff {
   margin-top: 30px; }
