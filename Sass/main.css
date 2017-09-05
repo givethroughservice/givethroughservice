@@ -1,5 +1,8 @@
 #calendar {
   margin-top: 100px; }
+  @media (max-width: 768px) {
+    #calendar {
+      margin-top: 0px; } }
   #calendar h1 {
     color: white;
     font-family: "Painted Paradise";
@@ -8,6 +11,28 @@
     margin-bottom: 20px; }
   #calendar iframe {
     border-radius: 10px; }
+
+#contact-header {
+  margin-top: 30px; }
+  @media (max-width: 768px) {
+    #contact-header {
+      margin-top: 0px; } }
+  #contact-header h1 {
+    color: white;
+    font-family: "Painted Paradise";
+    letter-spacing: 1px;
+    line-height: 60px;
+    margin-bottom: 20px; }
+
+#form article {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px; }
+  #form article p {
+    font-size: 18px; }
+    @media (max-width: 600px) {
+      #form article p {
+        font-size: 15px; } }
 
 .blue, a, a:visited {
   color: #34338f; }
@@ -18,6 +43,23 @@
 @font-face {
   font-family: "Painted Paradise";
   src: url("../fonts/Painted Paradise.ttf") format("truetype"); }
+
+#thank-you {
+  margin-top: 50px; }
+
+#thank-you article {
+  background-color: white;
+  border-radius: 5px;
+  height: 350px;
+  margin-bottom: 100px;
+  padding: 15px; }
+  #thank-you article p {
+    font-size: 18px;
+    line-height: 50px;
+    margin-top: 100px; }
+    @media (max-width: 600px) {
+      #thank-you article p {
+        font-size: 15px; } }
 
 body {
   background-color: #2a2975;
@@ -34,23 +76,48 @@ a:hover {
   border-bottom: 4px solid #add14d;
   height: 60px;
   transition: all 0.5s ease-in-out; }
-
-.navbar .navbar-collapse {
-  border-color: #34338f; }
+  @media (max-width: 768px) {
+    .navbar {
+      background-color: transparent;
+      border: none; } }
 
 .navbar-brand {
   padding-left: 15%;
   margin-top: -8px; }
   .navbar-brand img {
     transition: all 0.5s ease-in-out; }
+    @media (min-width: 768px) and (max-width: 1000px) {
+      .navbar-brand img {
+        width: 150px; } }
+  @media (max-width: 768px) {
+    .navbar-brand {
+      width: 33%;
+      margin-left: 20%; } }
+  @media (max-width: 520px) {
+    .navbar-brand {
+      width: 25%;
+      margin-left: 15%; } }
 
 .nav-index {
   font-size: 26px;
   margin-right: 100px;
   transition: all 0.5s ease-in-out; }
+  @media (max-width: 1200px) {
+    .nav-index {
+      margin-right: 50px; } }
+  @media (max-width: 1000px) {
+    .nav-index {
+      margin-right: 0px; } }
+  @media (max-width: 768px) {
+    .nav-index {
+      margin-right: 0px;
+      text-align: center; } }
   .nav-index li {
     padding-right: 20px;
     margin-bottom: 5px; }
+    @media (max-width: 768px) {
+      .nav-index li {
+        padding-right: 0px; } }
     @media (max-width: 768px) {
       .nav-index li a {
         background-color: white; } }
@@ -63,6 +130,9 @@ a:hover {
 
 .navbar-nav li {
   padding-top: 20px; }
+  @media (max-width: 767px) {
+    .navbar-nav li {
+      padding-top: 0px; } }
 .navbar-nav a {
   color: #34338f;
   font-family: "Painted Paradise";
@@ -75,18 +145,20 @@ ul.nav a {
     background-color: #add14d; }
 
 .navbar .navbar-toggle {
-  border-color: #34338f; }
+  border-color: #2a2975;
+  background-color: white; }
   .navbar .navbar-toggle .icon-bar {
-    background-color: #34338f; }
+    background-color: #2a2975; }
   .navbar .navbar-toggle:hover {
-    background-color: #34338f; }
+    background-color: #add14d; }
     .navbar .navbar-toggle:hover .icon-bar {
-      background-color: white; }
+      background-color: #2a2975; }
 
 .scrolled-nav {
   height: 40px; }
   .scrolled-nav .navbar-brand img {
-    width: 120px; }
+    width: 120px;
+    margin-left: 0%; }
   .scrolled-nav .nav-index {
     font-size: 22px; }
   .scrolled-nav .navbar-nav li {
@@ -95,25 +167,61 @@ ul.nav a {
 #page-title {
   color: white;
   margin-top: 90px; }
+  @media (max-width: 768px) {
+    #page-title {
+      margin-top: 20px; } }
   #page-title h1 {
     font-family: "Painted Paradise", cursive;
     font-size: 45px;
     letter-spacing: 2px; }
 
+#mobile-logo {
+  margin-top: 0px; }
+  #mobile-logo img {
+    padding: 10px; }
+    @media (max-width: 500px) {
+      #mobile-logo img {
+        width: 150px; } }
+
 #title-img {
+  border: 2px solid #add14d;
   border-radius: 5px; }
+  @media (max-width: 768px) {
+    #title-img {
+      margin-top: 20px;
+      width: 100%;
+      height: auto; } }
 
 .darkImg {
   filter: brightness(50%); }
 
-#motto, #founded, #sendoff {
+#intro-text {
   margin-top: 30px; }
 
-#motto-box, #founded-box, #sendoff-box {
+#intro-text-box {
   background-color: white;
   border-radius: 5px;
   font-size: 18px;
-  padding: 20px; }
+  padding: 30px;
+  text-indent: 30px; }
+  @media (max-width: 768px) {
+    #intro-text-box {
+      font-size: 15px;
+      text-align: left; } }
+
+#charities-box p {
+  margin-top: 30px;
+  text-indent: -25px; }
+  @media (min-width: 600px) and (max-width: 768px) {
+    #charities-box p {
+      text-indent: 0px;
+      padding-left: 50px;
+      padding-right: 20px; } }
+  @media (max-width: 599px) {
+    #charities-box p {
+      padding-left: 20px;
+      text-indent: 0px;
+      padding-right: 10px; } }
 
 #video-box, #gallery-box {
   width: 80%;
@@ -135,24 +243,6 @@ ul.nav a {
 
 #ladybird {
   margin-left: 19%; }
-
-#founded-box p {
-  text-indent: -10px; }
-  @media (max-width: 768px) {
-    #founded-box p {
-      text-align: center; } }
-#founded-box i {
-  color: #2a2975; }
-#founded-box #founded-p {
-  text-align: left;
-  text-indent: 0px; }
-
-.charity-list {
-  margin-top: 35px; }
-
-@media (min-width: 768px) {
-  .charity-list-2 {
-    margin-top: 35px; } }
 
 #and-more {
   font-size: 25px; }

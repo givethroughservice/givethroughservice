@@ -3,6 +3,7 @@
 @import components.sass
 @import mixins.sass
 @import fonts.sass
+@import thanks.sass
 
 
 body
@@ -25,23 +26,43 @@ a
 	border-bottom: 4px solid #add14d
 	height: 60px
 	transition: all .5s ease-in-out
+	@media (max-width: 768px)
+		background-color: transparent
+		border: none
 
 .navbar .navbar-collapse
-	border-color: #34338f
+	// border-color: #34338f
 
 .navbar-brand
 	padding-left: 15%
 	margin-top: -8px
 	img
 		transition: all .5s ease-in-out
+		@media (min-width: 768px) and (max-width: 1000px)
+			width: 150px
+	@media (max-width: 768px)
+		width: 33%
+		margin-left: 20%
+	@media (max-width: 520px)
+		width: 25%
+		margin-left: 15%
 
 .nav-index
 	font-size: 26px
 	margin-right: 100px
 	transition: all .5s ease-in-out
+	@media (max-width: 1200px)
+		margin-right: 50px
+	@media (max-width: 1000px)
+		margin-right: 0px
+	@media (max-width: 768px)
+		margin-right: 0px
+		text-align: center
 	li
 		padding-right: 20px
 		margin-bottom: 5px
+		@media (max-width: 768px)
+			padding-right: 0px
 		a
 			@media (max-width: 768px)
 				background-color: white
@@ -56,6 +77,8 @@ a
 .navbar-nav
 	li
 		padding-top: 20px
+		@media (max-width: 767px)
+			padding-top: 0px
 		// transition: all .5s ease-in-out
 	a
 		color: #34338f
@@ -70,19 +93,22 @@ ul.nav a
 		background-color: #add14d
 
 .navbar .navbar-toggle
-	border-color: #34338f
+	border-color: #2a2975
+	background-color: white
 	.icon-bar
-		background-color: #34338f
+		background-color: #2a2975
 	&:hover
-		background-color: #34338f
+		background-color: #add14d
 		.icon-bar
-			background-color: #fff
+			background-color: #2a2975
+
 
 .scrolled-nav 
 	& .navbar
 	height: 40px
 	.navbar-brand img
 		width: 120px
+		margin-left: 0%
 	.nav-index
 		font-size: 22px
 	.navbar-nav li
@@ -92,25 +118,65 @@ ul.nav a
 #page-title
 	color: #fff
 	margin-top: 90px
+	@media (max-width: 768px)
+		margin-top: 20px
 	h1
 		font-family: "Painted Paradise", cursive
 		font-size: 45px
-		letter-spacing: 2px
+		letter-spacing: 2px		
+
+#mobile-logo
+	// background-color: white
+	margin-top: 0px
+	img
+		padding: 10px
+		@media (max-width: 500px)
+			width: 150px
 
 #title-img
+	border: 2px solid #add14d
 	border-radius: 5px
+	@media (max-width: 768px)
+		margin-top: 20px
+		width: 100%
+		height: auto
+	@media (max-width: 650px)
+		// height: 250px
+	@media (max-width: 465px)
+		// height: 200px
 
 .darkImg
 	filter: brightness(50%)
 
-#motto, #founded, #sendoff
+#intro-text
 	margin-top: 30px
 
-#motto-box
+#intro-text-box
 	background-color: #fff
 	border-radius: 5px
 	font-size: 18px
-	padding: 20px
+	padding: 30px
+	text-indent: 30px
+	@media (max-width: 768px)
+		font-size: 15px
+		text-align: left
+
+
+#charities-box
+	p
+		margin-top: 30px
+		text-indent: -25px
+		@media (min-width: 600px) and (max-width: 768px)
+			text-indent: 0px
+			padding-left: 50px
+			padding-right: 20px
+		@media (max-width: 599px)
+			padding-left: 20px
+			text-indent: 0px
+			padding-right: 10px	
+	#founded-p
+		// text-align: left
+		// text-indent: 0px
 
 #video-box
 	width: 80%
@@ -133,24 +199,12 @@ ul.nav a
 #ladybird
 	margin-left: 19%
 
-#founded-box
-	@extend #motto-box
-	p
-		text-indent: -10px
-		@media (max-width: 768px)
-			text-align: center
-	i
-		color: #2a2975
-	#founded-p
-		text-align: left
-		text-indent: 0px
-
 .charity-list
-	margin-top: 35px
+	// margin-top: 30px
 
 .charity-list-2
 	@media (min-width: 768px)
-		margin-top: 35px
+		// margin-top: 35px
 
 #and-more
 	font-size: 25px

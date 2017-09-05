@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 
   $('.navbar-toggle').click(function(){
-  	$('#title-img').toggleClass("darkImg")
+  	$('main').toggleClass("darkImg")
   })
 
 });

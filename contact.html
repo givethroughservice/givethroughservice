@@ -3,14 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-
-  <title>Give Through Service | Calendar</title>
-
+  <title>Give Through Service</title>
   <meta name="description" content="" />
   <meta name="revised" content="5/16/2017" />
   <meta name="author" content="Jonathan Soape" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -18,24 +15,18 @@
   <link rel="manifest" href="favicon/manifest.json">
   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#32308f">
   <meta name="theme-color" content="#ffffff">
-
   <!--  Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
   <!--  Font Awesome -->
   <script src="https://use.fontawesome.com/2f9632c084.js"></script>
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Courgette|Delius|Lato" rel="stylesheet">
-
   <!--   CSS   -->
   <link rel="stylesheet" type="text/css" href="Sass/main.css" />
-
+  <link rel="stylesheet" type="text/css" href="Sass/contact.css" />
   <!-- Media Queries -->
   <!-- <link rel="stylesheet" type="text/css" href="media-queries.css" /> -->
-
 </head>
-
 
 <body>
 
@@ -48,13 +39,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand hidden-xs" href="index.html"><img src="logos/gts-logo.png" width="120px" /></a>
+        <a class="navbar-brand hidden-xs" href="index.html"><img src="logos/gts-logo.png" width="200px" /></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav nav-index pull-right">
           <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="calendar.html">Calendar</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -75,26 +66,51 @@
         </div>
       </div>
     </section>
-
-    <section id="calendar">
-      <div class="row text-center">
-        <div class="col-xs-12">
-          <h1>Calendar</h1>
+    
+    <section id="contact-header">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h1>Contact</h1>
         </div>
+      </div>
+    </section>
 
-        <!-- Big Calendar -->
-        <div class="col-xs-12 hidden-sm hidden-xs">
-          <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tlgvaf39mump0j83c90io68530%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago" style="border:solid 3px #add14d" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
+    <section id="form">
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
 
-        <!-- Tablet Calendar -->
-        <div class="col-xs-12 visible-sm">
-          <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tlgvaf39mump0j83c90io68530%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago" style="border:solid 3px #add14d" width="500" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
+          <article>
+            <p class="text-center">Do you have a charity suggestion or request? Please let us know!</p>
 
-        <!-- Mobile Calendar -->
-        <div class="col-xs-12 visible-xs text-center">
-          <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;showTitle=0&amp;mode=AGENDA&amp;height=460&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tlgvaf39mump0j83c90io68530%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago" style="border:solid 1px #add14d" width="300" height="460" frameborder="0" scrolling="no"></iframe>
+            <script type="text/javascript">
+            var submitted = false;
+            </script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='ThankYou.html';}"></iframe>
+
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSc2uVq2sqXeZTAgKh3ZyBqXKw6kjAyfHOTpAebz6lR6Sm_V_Q/formResponse" method="post" class="contactform" target="hidden_iframe" onsubmit="submitted=true;">
+              <p class="input_wrapper">
+                <input type="text" name="entry.2005620554" value="" id="contact_nom">
+                <label for="contact_nom">NAME</label>
+              </p>
+              <p class="input_wrapper">
+                <input type="text" name="entry.1045781291" value="" id="contact_email">
+                <label for="contact_email">EMAIL</label>
+              </p>
+              <p class="input_wrapper">
+                <input type="text" name="entry.1166974658" value="" id="contact_sujet">
+                <label for="contact_sujet">PHONE</label>
+              </p>
+              <p class="textarea_wrapper">
+                <textarea name="entry.839337160" id="contact_message"></textarea>
+              </p>
+              <p class="submit_wrapper">
+                <input type="submit" value="SEND">
+              </p>
+            </form>
+
+            <p class="text-center">Have a question? Email <a href="mailto:givethroughservice@gmail.com">givethroughservice@gmail.com</a></p>
+          </article>
+
         </div>
       </div>
     </section>
@@ -142,7 +158,7 @@
       <div class="col-sm-4">
         <div class="copyright">
           <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2017</p>
-          <p><a href="http://www.gts-ts.com/">Visit the GTS-TS Homepage <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+          <p><a href="http://www.gts-ts.com/">Visit the GTS Home Page <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
         </div>
       </div>
     </div>
@@ -150,15 +166,10 @@
 
 
 
-
   <!-- jQuery  -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
   <!-- Bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
   <!-- Functions -->
   <script src="functions.js"></script>
-
-
 </body>
