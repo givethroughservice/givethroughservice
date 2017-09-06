@@ -5,7 +5,7 @@ Website Author: Jonathan Soape jonathansoape@gmail.com
 Instructions for adding images to the Image Slider:
 
   Starting from URL https://github.com/givethroughservice/givethroughservice
-  Click on the "images" folder
+  Click on the "img" folder
   Towards the top right, Click "Upload Files"
   Drag and Drop the images you'd like to upload
   At the bottom, Click the Green Box that says "Commit Changes"
@@ -17,7 +17,7 @@ Instructions for adding images to the Image Slider:
     The order of the images is based on the filename, so to change the order you need to change the filename of the image.
   
     Starting from URL https://github.com/givethroughservice/givethroughservice
-    Click on the "images" folder
+    Click on the "img" folder
     Click on the image that you want to change
     Towards the top right, Click the Trash Can icon to Delete the file
     At the bottom, Click the Green Box that says "Commit Changes"
