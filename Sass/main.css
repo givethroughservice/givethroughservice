@@ -207,56 +207,193 @@ ul.nav a {
   @media (max-width: 768px) {
     #intro-text-box {
       font-size: 15px;
+      line-height: 25px;
       text-align: left; } }
+  @media (max-width: 420px) {
+    #intro-text-box {
+      padding: 15px; } }
 
 #charities-box p {
   margin-top: 30px;
   text-indent: -25px; }
   @media (min-width: 600px) and (max-width: 768px) {
     #charities-box p {
-      text-indent: 0px;
       padding-left: 50px;
       padding-right: 20px; } }
   @media (max-width: 599px) {
     #charities-box p {
-      padding-left: 20px;
-      text-indent: 0px;
+      margin-top: 20px;
+      padding-left: 40px;
       padding-right: 10px; } }
+@media (min-width: 600px) and (max-width: 768px) {
+  #charities-box .charity-list-2 {
+    margin-top: 20px; } }
+@media (max-width: 599px) {
+  #charities-box .charity-list-2 {
+    margin-top: 12px; } }
 
-#video-box, #gallery-box {
+#and-more {
+  font-size: 25px; }
+  @media (max-width: 420px) {
+    #and-more {
+      font-size: 18px; } }
+
+#sendoff a {
+  font-size: 20px; }
+
+#video-box {
   width: 80%;
   margin: 0 auto;
   background-color: white;
   border: 2px solid #add14d;
   height: 400px;
   margin-top: 30px; }
-  #video-box p, #gallery-box p {
+  #video-box p {
     margin-top: 100px; }
 
 #logo-banner {
   background-color: white;
   height: 140px;
   margin-top: 30px; }
+  @media (max-width: 1050px) {
+    #logo-banner {
+      height: 90px; } }
+  @media (max-width: 460px) {
+    #logo-banner {
+      height: 75px; } }
+  #logo-banner .logo-box {
+    margin-left: 15%; }
+    @media (max-width: 1450px) {
+      #logo-banner .logo-box {
+        margin-left: 12%; } }
+    @media (max-width: 1300px) {
+      #logo-banner .logo-box {
+        margin-left: 8%; } }
+    @media (max-width: 1200px) {
+      #logo-banner .logo-box {
+        margin-left: 4%; } }
+    @media (max-width: 1050px) {
+      #logo-banner .logo-box {
+        margin-left: 10%; } }
+    @media (max-width: 992px) {
+      #logo-banner .logo-box {
+        margin-left: 7%; } }
+    @media (max-width: 900px) {
+      #logo-banner .logo-box {
+        margin-left: 2%; } }
+    @media (max-width: 840px) {
+      #logo-banner .logo-box {
+        margin-left: 0%; } }
+    @media (max-width: 767px) {
+      #logo-banner .logo-box {
+        margin-left: 20%; } }
+    @media (max-width: 750px) {
+      #logo-banner .logo-box {
+        margin-left: 15%; } }
+    @media (max-width: 675px) {
+      #logo-banner .logo-box {
+        margin-left: 10%; } }
+    @media (max-width: 570px) {
+      #logo-banner .logo-box {
+        margin-left: 5%; }
+        #logo-banner .logo-box #caritas {
+          margin-left: 10%; } }
+    @media (max-width: 530px) {
+      #logo-banner .logo-box {
+        margin-left: 0%; }
+        #logo-banner .logo-box #caritas {
+          margin-left: 7%; } }
+    @media (max-width: 435px) {
+      #logo-banner .logo-box {
+        margin-left: 5%; }
+        #logo-banner .logo-box #caritas {
+          margin-left: 3%; } }
+    @media (max-width: 400px) {
+      #logo-banner .logo-box {
+        margin-left: 0%; }
+        #logo-banner .logo-box #caritas {
+          margin-left: 0%; } }
   #logo-banner img {
     display: inline;
     padding: 5px 15px; }
+  #logo-banner .wide-logo {
+    width: 250px; }
+    @media (max-width: 1200px) {
+      #logo-banner .wide-logo {
+        width: 225px; } }
+    @media (max-width: 1050px) {
+      #logo-banner .wide-logo {
+        width: 200px; } }
+    @media (max-width: 840px) {
+      #logo-banner .wide-logo {
+        width: 175px; } }
+    @media (max-width: 767px) {
+      #logo-banner .wide-logo {
+        width: 200px; } }
+    @media (max-width: 500px) {
+      #logo-banner .wide-logo {
+        width: 175px; } }
+    @media (max-width: 435px) {
+      #logo-banner .wide-logo {
+        width: 140px; } }
+    @media (max-width: 375px) {
+      #logo-banner .wide-logo {
+        width: 120px; } }
+    @media (max-width: 330px) {
+      #logo-banner .wide-logo {
+        width: 110px; } }
+  #logo-banner .box-logo {
+    width: 100px; }
+    @media (max-width: 1050px) {
+      #logo-banner .box-logo {
+        width: 75px; } }
+    @media (max-width: 767px) {
+      #logo-banner .box-logo {
+        width: 100px; } }
+    @media (max-width: 460px) {
+      #logo-banner .box-logo {
+        width: 85px; } }
+    @media (max-width: 375px) {
+      #logo-banner .box-logo {
+        width: 75px; } }
+    @media (max-width: 330px) {
+      #logo-banner .box-logo {
+        width: 70px; } }
+  @media (max-width: 767px) {
+    #logo-banner #rmhc {
+      width: 75px; } }
+  @media (max-width: 460px) {
+    #logo-banner #rmhc {
+      width: 60px; } }
 
-#ladybird {
-  margin-left: 19%; }
-
-#and-more {
-  font-size: 25px; }
-
-#sendoff-box a {
-  font-size: 20px; }
-
-#gallery-box p {
-  margin-top: 100px; }
+#gallery {
+  margin-top: 25px; }
+  #gallery #myCarousel .carousel-control {
+    border-radius: 5px; }
+    #gallery #myCarousel .carousel-control:hover {
+      background-color: #add14d; }
+  #gallery #myCarousel .carousel-indicators {
+    bottom: -50px; }
+  #gallery img {
+    border: 2px solid #add14d;
+    border-radius: 5px;
+    margin: 0 auto;
+    height: 400px;
+    width: auto; }
+    @media (max-width: 600px) {
+      #gallery img {
+        height: 300px; } }
+    @media (max-width: 450px) {
+      #gallery img {
+        height: 250px; } }
+    @media (max-width: 350px) {
+      #gallery img {
+        height: 200px; } }
 
 footer {
   height: 200px;
   border-top: 4px solid #add14d;
-  margin-top: 50px; }
+  margin-top: 75px; }
 
 .connect-with {
   color: white;

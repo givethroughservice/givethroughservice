@@ -159,7 +159,10 @@ ul.nav a
 	text-indent: 30px
 	@media (max-width: 768px)
 		font-size: 15px
+		line-height: 25px
 		text-align: left
+	@media (max-width: 420px)
+		padding: 15px
 
 
 #charities-box
@@ -167,16 +170,28 @@ ul.nav a
 		margin-top: 30px
 		text-indent: -25px
 		@media (min-width: 600px) and (max-width: 768px)
-			text-indent: 0px
+			// text-indent: 0px
 			padding-left: 50px
 			padding-right: 20px
 		@media (max-width: 599px)
-			padding-left: 20px
-			text-indent: 0px
+			margin-top: 20px
+			padding-left: 40px
 			padding-right: 10px	
-	#founded-p
-		// text-align: left
-		// text-indent: 0px
+			// text-indent: 0px
+	.charity-list-2
+		@media (min-width: 600px) and (max-width: 768px)
+			margin-top: 20px
+		@media (max-width: 599px)
+			margin-top: 12px
+
+#and-more
+	font-size: 25px
+	@media (max-width: 420px)
+		font-size: 18px
+
+#sendoff
+	a
+		font-size: 20px
 
 #video-box
 	width: 80%
@@ -192,38 +207,120 @@ ul.nav a
 	background-color: #fff
 	height: 140px
 	margin-top: 30px
+	@media (max-width: 1050px)
+		height: 90px
+	@media (max-width: 460px)
+		height: 75px
+	.logo-box
+		margin-left: 15%
+		@media (max-width: 1450px)
+			margin-left: 12%
+		@media (max-width: 1300px)
+			margin-left: 8%
+		@media (max-width: 1200px)
+			margin-left: 4%
+		@media (max-width: 1050px)
+			margin-left: 10%
+		@media (max-width: 992px)
+			margin-left: 7%
+		@media (max-width: 900px)
+			margin-left: 2%
+		@media (max-width: 840px)
+			margin-left: 0%
+		@media (max-width: 767px)
+			margin-left: 20%
+		@media (max-width: 750px)
+			margin-left: 15%
+		@media (max-width: 675px)
+			margin-left: 10%
+		@media (max-width: 570px)
+			margin-left: 5%
+			#caritas
+				margin-left: 10%
+		@media (max-width: 530px)
+			margin-left: 0%
+			#caritas
+				margin-left: 7%
+		@media (max-width: 435px)
+			margin-left: 5%
+			#caritas
+				margin-left: 3%
+		@media (max-width: 400px)
+			margin-left: 0%
+			#caritas
+				margin-left: 0%
+		
 	img
 		display: inline
 		padding: 5px 15px
 
-#ladybird
-	margin-left: 19%
+	.wide-logo
+		width: 250px
+		@media (max-width: 1200px)
+			width: 225px
+		@media (max-width: 1050px)
+			width: 200px
+		@media (max-width: 840px)
+			width: 175px
+		@media (max-width: 767px)
+			width: 200px
+		@media (max-width: 500px)
+			width: 175px
+		@media (max-width: 435px)
+			width: 140px
+		@media (max-width: 375px)
+			width: 120px
+		@media (max-width: 330px)
+			width: 110px
 
-.charity-list
-	// margin-top: 30px
+	.box-logo
+		width: 100px
+		@media (max-width: 1050px)
+			width: 75px
+		@media (max-width: 767px)
+			width: 100px
+		@media (max-width: 460px)
+			width: 85px
+		@media (max-width: 375px)
+			width: 75px
+		@media (max-width: 330px)
+			width: 70px
+	#rmhc
+		@media (max-width: 767px)
+			width: 75px
+		@media (max-width: 460px)
+			width: 60px
 
 .charity-list-2
 	@media (min-width: 768px)
-		// margin-top: 35px
 
-#and-more
-	font-size: 25px
-
-#sendoff-box
-	@extend #motto-box
-	a
-		font-size: 20px
-
-#gallery-box
-	@extend #video-box
-	p
-		margin-top: 100px
-
+#gallery
+	margin-top: 25px
+	#myCarousel
+		.carousel-control
+			border-radius: 5px
+			&:hover
+				background-color: #add14d
+				// opacity: .5
+		.carousel-indicators
+			bottom: -50px
+	img
+		border: 2px solid #add14d
+		border-radius: 5px
+		margin: 0 auto
+		height: 400px
+		width: auto
+		@media (max-width: 600px)
+			height: 300px
+		@media (max-width: 450px)
+			height: 250px
+		@media (max-width: 350px)
+			height: 200px
 
 footer
 	height: 200px
 	border-top: 4px solid #add14d
-	margin-top: 50px
+	margin-top: 75px
 
 .connect-with
 	color: white

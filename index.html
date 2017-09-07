@@ -70,12 +70,7 @@
     <section id="title-img-sec">
       <div class="row">
         <div class="col-xs-12 text-center">
-
-          <!-- 
-        TO CHANGE THE HOME PAGE IMAGE, CHANGE THE FILEPATH BETWEEN THE SRC QUOTES BELOW. EX: src="img/name-of-image.jpg" 
-        -->
-          <img id="title-img" src="img/img_1.jpg" height="350px" alt="Give Through Service Group Photo" />
-
+          <img id="title-img" src="img/img_01.jpg" height="350px" alt="Give Through Service Group Photo" />
         </div>
       </div>
     </section>
@@ -103,10 +98,10 @@
                   </p>
                 </div>
                 <div class="col-xs-12 col-sm-5 col-sm-offset-1 text-left">
-                  <p class="charity-list-2"><img src="logos/gts-logo.png" width="20px" /> <a href="https://www.familyeldercare.org/">Family Eldercare</a>
-                  </p>
-                  <p><img src="logos/gts-logo.png" width="20px" />
+                  <p class="charity-list-2"><img src="logos/gts-logo.png" width="20px" />
                     <a href="https://www.wildflower.org/">The Lady Bird Johnson Wildflower Center</a>
+                  </p>
+                  <p><img src="logos/gts-logo.png" width="20px" /> <a href="https://www.familyeldercare.org/">Family Eldercare</a>
                   </p>
                   <p><img src="logos/gts-logo.png" width="20px" />
                     <a href="https://www.mealsonwheelscentraltexas.org/">Meals on Wheels Central Texas</a>
@@ -118,7 +113,7 @@
               </div>
             </div>
             
-            <p>Please check out our <a href="calendar.html">calendar</a> to learn about our upcoming events. Feel free to <a href="contact.html">contact</a> us if you’d like to join us or if there’s an organization that you’d like to see us support. We’d love to make a difference with you!</p>
+            <p id="sendoff">Please check out our <a href="calendar.html">calendar</a> to learn about our upcoming events. Feel free to <a href="contact.html">contact</a> us if you’d like to join us or if there’s an organization that you’d like to see us support. We’d love to make a difference with you!</p>
           </div>
         </div>
       </div>
@@ -137,14 +132,34 @@
     <section id="logo-banner">
       <div class="row">
         <div class="col-xs-12">
-          <div id="logo-box">
-            <img id="ladybird" src="logos/ladybird.jpg" width="15%" alt="Lady Bird Johnson Wildflower Center" title="Lady Bird Johnson Wildflower Center" />
-            <img id="caritas" src="logos/caritas.jpg" width="6%" alt="Caritas" title="Caritas" />
-            <img src="logos/mow.jpg" width="6%" alt="Meals on Wheels" title="Meals on Wheels" />
-            <img src="logos/rmhc.png" width="6%" alt="Ronald McDonald House Charities" title="Ronald McDonald House Charities" />
-            <img src="logos/spca.jpg" width="6%" alt="Society for the Prevention of Cruelty to Animals" title="Society for the Prevention of Cruelty to Animals" />
-            <img src="logos/eldercare.jpg" width="6%" alt="Family Eldercare" title="Family Eldercare" />
-            <img src="logos/solehope.png" width="15%" alt="Sole Hope" title="Sole Hope" />
+          <div class="logo-box hidden-xs">
+            <img id="ladybird" class="wide-logo" src="logos/ladybird.jpg" alt="Lady Bird Johnson Wildflower Center" title="Lady Bird Johnson Wildflower Center" />
+            <img id="caritas" class="box-logo" src="logos/caritas.jpg" alt="Caritas" title="Caritas" />
+            <img class="box-logo" src="logos/mow.jpg" alt="Meals on Wheels" title="Meals on Wheels" />
+            <img class="box-logo" src="logos/rmhc.png" alt="Ronald McDonald House Charities" title="Ronald McDonald House Charities" />
+            <img class="box-logo" src="logos/spca.jpg" alt="Society for the Prevention of Cruelty to Animals" title="Society for the Prevention of Cruelty to Animals" />
+            <img class="box-logo" src="logos/eldercare.jpg" alt="Family Eldercare" title="Family Eldercare" />
+            <img class="wide-logo" src="logos/solehope.png" alt="Sole Hope" title="Sole Hope" />
+          </div>
+
+          <div id="splitLogoCarousel" class="carousel slide visible-xs" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="logo-box">
+                  <img id="ladybird" class="wide-logo" src="logos/ladybird.jpg" alt="Lady Bird Johnson Wildflower Center" title="Lady Bird Johnson Wildflower Center" />
+                  <img id="rmhc" class="box-logo" src="logos/rmhc.png" alt="Ronald McDonald House Charities" title="Ronald McDonald House Charities" />
+                  <img class="wide-logo" src="logos/solehope.png" alt="Sole Hope" title="Sole Hope" />
+                </div>
+              </div>
+              <div class="item">
+                <div class="logo-box">
+                  <img id="caritas" class="box-logo" src="logos/caritas.jpg" alt="Caritas" title="Caritas" />
+                  <img class="box-logo" src="logos/mow.jpg" alt="Meals on Wheels" title="Meals on Wheels" />
+                  <img class="box-logo" src="logos/spca.jpg" alt="Society for the Prevention of Cruelty to Animals" title="Society for the Prevention of Cruelty to Animals" />
+                  <img class="box-logo" src="logos/eldercare.jpg" alt="Family Eldercare" title="Family Eldercare" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -153,15 +168,23 @@
     <section id="gallery">
       <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-          <div id="photoRow" class="row">
+          
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators"></ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner"></div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
 
-          </div>
-          <div id="gallery-box">
-            <p class="text-center">Slideshow gallery here</p>
-            
-              
-            
-          </div>
         </div>
       </div>
     </section>
