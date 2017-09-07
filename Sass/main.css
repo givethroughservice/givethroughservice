@@ -372,8 +372,10 @@ ul.nav a {
     border-radius: 5px; }
     #gallery #myCarousel .carousel-control:hover {
       background-color: #add14d; }
-  #gallery #myCarousel .carousel-indicators {
-    bottom: -50px; }
+  #gallery #myCarousel .carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto; }
   #gallery img {
     border: 2px solid #add14d;
     border-radius: 5px;
