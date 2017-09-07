@@ -303,11 +303,24 @@ ul.nav a
 				background-color: #add14d
 				// opacity: .5
 		.carousel-indicators
-			// bottom: -50px
+			bottom: -50px
 		.carousel-caption
-			position: relative
-			left: auto
-			right: auto
+			color: #eee
+			text-shadow: 2px 2px 2px black
+			// position: relative
+			left: 30%
+			right: 30%
+			@media (max-width: 1200px)
+				left: 15%
+				right: 15%
+			@media (max-width: 450px)
+				bottom: -10px
+		.caption-text
+			font-size: 22px
+			@media (max-width: 600px)
+				font-size: 18px
+			@media (max-width: 450px)
+				font-size: 16px
 	img
 		border: 2px solid #add14d
 		border-radius: 5px

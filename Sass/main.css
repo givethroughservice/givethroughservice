@@ -372,10 +372,28 @@ ul.nav a {
     border-radius: 5px; }
     #gallery #myCarousel .carousel-control:hover {
       background-color: #add14d; }
+  #gallery #myCarousel .carousel-indicators {
+    bottom: -50px; }
   #gallery #myCarousel .carousel-caption {
-    position: relative;
-    left: auto;
-    right: auto; }
+    color: #eeeeee;
+    text-shadow: 2px 2px 2px black;
+    left: 30%;
+    right: 30%; }
+    @media (max-width: 1200px) {
+      #gallery #myCarousel .carousel-caption {
+        left: 15%;
+        right: 15%; } }
+    @media (max-width: 450px) {
+      #gallery #myCarousel .carousel-caption {
+        bottom: -10px; } }
+  #gallery #myCarousel .caption-text {
+    font-size: 22px; }
+    @media (max-width: 600px) {
+      #gallery #myCarousel .caption-text {
+        font-size: 18px; } }
+    @media (max-width: 450px) {
+      #gallery #myCarousel .caption-text {
+        font-size: 16px; } }
   #gallery img {
     border: 2px solid #add14d;
     border-radius: 5px;

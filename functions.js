@@ -29,7 +29,7 @@ $(document).ready(function(){
     accessToken: '6005823620.1677ed0.20cac08d4a63427888f1c53e5eb6cf13',
     resolution: 'standard_resolution',
     sortBy: 'least-recent',
-    template: "<div class='item'><img src='{{image}}' title='{{caption}}'><div class='carousel-caption'><h3>{{caption}}</h3></div></div>",
+    template: "<div class='item'><img src='{{image}}' title='{{caption}}'><div class='carousel-caption'><p class='caption-text'>{{caption}}</p></div></div>",
     after: function(){
     	$('#myCarousel .carousel-inner .item:first').addClass('active');
     	$('#myCarousel .item').each(function(i){
