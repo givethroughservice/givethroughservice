@@ -75,6 +75,8 @@ a:hover {
   background-color: white;
   border-bottom: 4px solid #add14d;
   height: 60px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
   @media (max-width: 768px) {
     .navbar {
@@ -85,6 +87,8 @@ a:hover {
   padding-left: 15%;
   margin-top: -8px; }
   .navbar-brand img {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
     @media (min-width: 768px) and (max-width: 1000px) {
       .navbar-brand img {
@@ -101,6 +105,8 @@ a:hover {
 .nav-index {
   font-size: 26px;
   margin-right: 100px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
   @media (max-width: 1200px) {
     .nav-index {
@@ -140,6 +146,8 @@ a:hover {
   transition: all 0.3s ease-in-out; }
 
 ul.nav a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px; }
   ul.nav a:hover {
     background-color: #add14d; }
@@ -185,6 +193,8 @@ ul.nav a {
 
 #title-img {
   border: 2px solid #add14d;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px; }
   @media (max-width: 768px) {
     #title-img {
@@ -200,6 +210,8 @@ ul.nav a {
 
 #intro-text-box {
   background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
   font-size: 18px;
   padding: 30px;
@@ -369,6 +381,8 @@ ul.nav a {
 #gallery {
   margin-top: 25px; }
   #gallery #myCarousel .carousel-control {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px; }
     #gallery #myCarousel .carousel-control:hover {
       background-color: #add14d; }
@@ -394,21 +408,49 @@ ul.nav a {
     @media (max-width: 450px) {
       #gallery #myCarousel .caption-text {
         font-size: 16px; } }
-  #gallery img {
+  #gallery .carousel-inner img {
     border: 2px solid #add14d;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     margin: 0 auto;
     height: 400px;
     width: auto; }
     @media (max-width: 600px) {
-      #gallery img {
+      #gallery .carousel-inner img {
         height: 300px; } }
     @media (max-width: 450px) {
-      #gallery img {
+      #gallery .carousel-inner img {
         height: 250px; } }
     @media (max-width: 350px) {
-      #gallery img {
+      #gallery .carousel-inner img {
         height: 200px; } }
+
+ul.thumbnails-carousel {
+  padding: 5px;
+  margin: 0;
+  list-style-type: none; }
+  ul.thumbnails-carousel .center {
+    display: inline-block; }
+  ul.thumbnails-carousel img {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+    ul.thumbnails-carousel img:hover {
+      -webkit-box-shadow: -1px 1px 5px 5px white;
+      -moz-box-shadow: -1px 1px 5px 5px white;
+      box-shadow: -1px 1px 5px 5px white; }
+  ul.thumbnails-carousel li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px; }
+  ul.thumbnails-carousel .active-thumbnail {
+    -webkit-box-shadow: -1px 1px 5px 5px white;
+    -moz-box-shadow: -1px 1px 5px 5px white;
+    box-shadow: -1px 1px 5px 5px white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
 
 footer {
   height: 200px;
@@ -425,6 +467,8 @@ footer {
 .social-media {
   color: #add14d; }
   .social-media a {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     color: #add14d;
     margin-left: 10px;

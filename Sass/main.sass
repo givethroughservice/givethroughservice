@@ -25,6 +25,8 @@ a
 	background-color: #fff
 	border-bottom: 4px solid #add14d
 	height: 60px
+	-webkit-transition: all .5s ease-in-out
+	-moz-transition: all .5s ease-in-out
 	transition: all .5s ease-in-out
 	@media (max-width: 768px)
 		background-color: transparent
@@ -37,6 +39,8 @@ a
 	padding-left: 15%
 	margin-top: -8px
 	img
+		-webkit-transition: all .5s ease-in-out
+		-moz-transition: all .5s ease-in-out
 		transition: all .5s ease-in-out
 		@media (min-width: 768px) and (max-width: 1000px)
 			width: 150px
@@ -50,6 +54,8 @@ a
 .nav-index
 	font-size: 26px
 	margin-right: 100px
+	-webkit-transition: all .5s ease-in-out
+	-moz-transition: all .5s ease-in-out
 	transition: all .5s ease-in-out
 	@media (max-width: 1200px)
 		margin-right: 50px
@@ -88,6 +94,8 @@ a
 
 
 ul.nav a
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
 	border-radius: 5px
 	&:hover
 		background-color: #add14d
@@ -135,6 +143,8 @@ ul.nav a
 
 #title-img
 	border: 2px solid #add14d
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
 	border-radius: 5px
 	@media (max-width: 768px)
 		margin-top: 20px
@@ -153,6 +163,8 @@ ul.nav a
 
 #intro-text-box
 	background-color: #fff
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
 	border-radius: 5px
 	font-size: 18px
 	padding: 30px
@@ -298,6 +310,8 @@ ul.nav a
 	margin-top: 25px
 	#myCarousel
 		.carousel-control
+			-webkit-border-radius: 5px
+			-moz-border-radius: 5px
 			border-radius: 5px
 			&:hover
 				background-color: #add14d
@@ -321,8 +335,10 @@ ul.nav a
 				font-size: 18px
 			@media (max-width: 450px)
 				font-size: 16px
-	img
+	.carousel-inner img
 		border: 2px solid #add14d
+		-webkit-border-radius: 5px
+		-moz-border-radius: 5px
 		border-radius: 5px
 		margin: 0 auto
 		height: 400px
@@ -333,6 +349,32 @@ ul.nav a
 			height: 250px
 		@media (max-width: 350px)
 			height: 200px
+
+ul.thumbnails-carousel
+	padding: 5px
+	margin: 0
+	list-style-type: none
+	.center
+		display: inline-block
+	img
+		-webkit-border-radius: 5px
+		-moz-border-radius: 5px
+		border-radius: 5px
+		&:hover
+			-webkit-box-shadow: -1px 1px 5px 5px rgba(255, 255, 255, 1)
+			-moz-box-shadow: -1px 1px 5px 5px rgba(255, 255, 255, 1)
+			box-shadow: -1px 1px 5px 5px rgba(255, 255, 255, 1)
+	li
+		cursor: pointer
+		display: inline-block
+		margin: 5px
+	.active-thumbnail
+		-webkit-box-shadow: -1px 1px 5px 5px #fff
+		-moz-box-shadow: -1px 1px 5px 5px #fff
+		box-shadow: -1px 1px 5px 5px #fff
+		-webkit-border-radius: 5px
+		-moz-border-radius: 5px
+		border-radius: 5px
 
 footer
 	height: 200px
@@ -349,6 +391,8 @@ footer
 .social-media
 	color: #add14d
 	a
+		-webkit-border-radius: 5px
+		-moz-border-radius: 5px
 		border-radius: 5px
 		color: #add14d
 		margin-left: 10px
