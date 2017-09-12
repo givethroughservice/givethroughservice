@@ -61,24 +61,39 @@
       #thank-you article p {
         font-size: 15px; } }
 
-@keyframes reveal {
+@keyframes slideLeft {
   from {
     opacity: 0;
-    transform: translateY(30px); }
+    transform: translateX(200px); }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px); }
 
   to {
     opacity: 1;
     transform: translateY(0px); } }
 
-.animateReveal {
-  animation: reveal 0.7s ease-in-out; }
+.animateSlideLeft {
+  animation: slideLeft 0.7s ease-in-out; }
 
-.hiddenElement {
+.animateSlideUp {
+  animation: slideUp 0.7s ease-in-out; }
+
+.hiddenElement, .hiddenElementDelay {
   overflow: hidden;
   opacity: 0;
   position: relative;
   transform: translateY(30px);
   transition: all 0.8s ease-in-out; }
+
+.hiddenElementDelay {
+  transition: all 0.8s ease-in-out 0.5s; }
 
 .isShowing {
   opacity: 1;

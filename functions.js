@@ -3,6 +3,9 @@
 
 $(document).ready(function(){
 
+	$('#title-img-sec').addClass('isShowing');
+	$('#intro-text').addClass('isShowing');
+
   var scrollTop = 0;
   $(window).scroll(function(){
     scrollTop = $(window).scrollTop();  
