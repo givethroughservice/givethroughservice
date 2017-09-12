@@ -61,6 +61,29 @@
       #thank-you article p {
         font-size: 15px; } }
 
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px); }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+.animateReveal {
+  animation: reveal 0.7s ease-in-out; }
+
+.hiddenElement {
+  overflow: hidden;
+  opacity: 0;
+  position: relative;
+  transform: translateY(30px);
+  transition: all 0.8s ease-in-out; }
+
+.isShowing {
+  opacity: 1;
+  transform: translateY(0px); }
+
 body {
   background-color: #2a2975;
   overflow-x: hidden; }
@@ -492,3 +515,7 @@ footer {
   margin-top: 20px; }
   .sitemap a {
     padding: 15px; }
+
+@media (max-width: 768px) {
+  .copyright {
+    text-align: center; } }

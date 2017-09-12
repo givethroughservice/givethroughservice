@@ -5,13 +5,26 @@ $(document).ready(function(){
 
   var scrollTop = 0;
   $(window).scroll(function(){
-    scrollTop = $(window).scrollTop();    
+    scrollTop = $(window).scrollTop();  
+    console.log(scrollTop);  
     if (scrollTop >= 100) {
       $('.navbar').addClass('scrolled-nav');
     } else if (scrollTop < 100) {
       $('.navbar').removeClass('scrolled-nav');
     } 
     
+    if(scrollTop >= 700){
+    	$('#video').addClass('isShowing');
+    }
+    if(scrollTop >= 1100){
+    	$('#logo-banner').addClass('isShowing');
+    }
+    if(scrollTop >= 1300){
+    	$('#gallery').addClass('isShowing');
+    }
+    if(scrollTop >= 1500){
+    	$('#instafeed2').addClass('isShowing');
+    }
   }); 
 
 
