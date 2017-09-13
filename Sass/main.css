@@ -211,6 +211,8 @@ ul.nav a {
     padding-top: 10px; }
 
 #page-title {
+  width: 98%;
+  margin: 0 auto;
   color: white;
   margin-top: 90px; }
   @media (max-width: 768px) {
