@@ -491,6 +491,7 @@ ul.thumbnails-carousel {
     border-radius: 5px; }
 
 footer {
+  width: 98%;
   height: 200px;
   border-top: 4px solid #add14d;
   margin-top: 75px; }
