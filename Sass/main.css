@@ -360,9 +360,9 @@ ul.nav a {
           margin-left: 3%; } }
     @media (max-width: 400px) {
       #logo-banner .logo-box {
-        margin-left: 0%; }
+        margin-left: 3%; }
         #logo-banner .logo-box #caritas {
-          margin-left: 0%; } }
+          margin-left: 2%; } }
   #logo-banner img {
     display: inline;
     padding: 5px 15px; }
