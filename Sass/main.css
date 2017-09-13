@@ -429,8 +429,6 @@ ul.nav a {
     border-radius: 5px; }
     #gallery #myCarousel .carousel-control:hover {
       background-color: #add14d; }
-  #gallery #myCarousel .carousel-indicators {
-    bottom: -50px; }
   #gallery #myCarousel .carousel-caption {
     color: #eeeeee;
     text-shadow: 2px 2px 2px black;
