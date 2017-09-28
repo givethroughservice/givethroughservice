@@ -436,6 +436,7 @@ ul.nav a {
       background-color: #add14d; }
   #gallery #myCarousel .carousel-caption {
     color: #eeeeee;
+    font-family: "Lato", sans-serif;
     text-shadow: 2px 2px 2px black;
     left: 30%;
     right: 30%; }
