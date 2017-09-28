@@ -11,6 +11,9 @@
     margin-bottom: 20px; }
   #calendar iframe {
     border-radius: 10px; }
+    #calendar iframe .rb-n {
+      height: 80px;
+      font-size: 14px; }
 
 #contact-header {
   margin-top: 30px; }
@@ -298,7 +301,7 @@ ul.nav a {
   margin: 0 auto;
   background-color: white;
   border: 2px solid #add14d;
-  height: 400px;
+  height: auto;
   margin-top: 30px; }
   #video-box p {
     margin-top: 100px; }

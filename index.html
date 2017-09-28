@@ -26,6 +26,7 @@
 </head>
 
 <body>
+
   <!-- N A V  B A R -->
   <nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
@@ -130,7 +131,11 @@
       <div class="row text-center">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
           <div id="video-box">
-            <p>Video Here</p>
+            <video id="gts-video" width="100%" controls ondblclick="makeFullScreen(this)">
+              <source src="vid/gts-video.mp4" type="video/mp4">
+              <source src="vid/gts-video.webm" type="video/webm">
+              Your browser does not support HTML5 video.
+            </video>
           </div>
         </div>
       </div>
