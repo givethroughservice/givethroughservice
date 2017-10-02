@@ -5,9 +5,6 @@
 @import thanks.sass
 @import animations.sass
 
-// *
-// 	overflow-x: hidden
-
 body
 	background-color: #2a2975
 	overflow-x: hidden
@@ -33,9 +30,6 @@ a
 	@media (max-width: 768px)
 		background-color: transparent
 		border: none
-
-.navbar .navbar-collapse
-	// border-color: #34338f
 
 .navbar-brand
 	padding-left: 15%
@@ -87,7 +81,6 @@ a
 		padding-top: 20px
 		@media (max-width: 767px)
 			padding-top: 0px
-		// transition: all .5s ease-in-out
 	a
 		color: #34338f
 		font-family: "Painted Paradise"
@@ -138,7 +131,6 @@ ul.nav a
 		letter-spacing: 2px		
 
 #mobile-logo
-	// background-color: white
 	margin-top: 0px
 	img
 		padding: 10px
@@ -155,9 +147,7 @@ ul.nav a
 		width: 100%
 		height: auto
 	@media (max-width: 650px)
-		// height: 250px
 	@media (max-width: 465px)
-		// height: 200px
 
 .darkImg
 	filter: brightness(50%)
@@ -186,14 +176,12 @@ ul.nav a
 		margin-top: 30px
 		text-indent: -25px
 		@media (min-width: 600px) and (max-width: 768px)
-			// text-indent: 0px
 			padding-left: 50px
 			padding-right: 20px
 		@media (max-width: 599px)
 			margin-top: 20px
 			padding-left: 40px
 			padding-right: 10px	
-			// text-indent: 0px
 	.charity-list-2
 		@media (min-width: 600px) and (max-width: 768px)
 			margin-top: 20px
@@ -321,17 +309,15 @@ ul.nav a
 			-webkit-border-radius: 5px
 			-moz-border-radius: 5px
 			border-radius: 5px
-			// overflow-y: hidden
 			&:hover
 				background-color: #add14d
-				// opacity: .5
 		.carousel-indicators
-			// bottom: -50px
+			@media (max-width:450px)
+				bottom: -10px
 		.carousel-caption
 			color: #eee
 			font-family: "Lato", sans-serif
 			text-shadow: 2px 2px 2px black
-			// position: relative
 			left: 30%
 			right: 30%
 			@media (max-width: 1200px)
@@ -387,7 +373,6 @@ ul.thumbnails-carousel
 		border-radius: 5px
 
 footer
-	// width: 98%
 	height: 200px
 	border-top: 4px solid #add14d
 	margin-top: 75px

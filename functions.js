@@ -9,14 +9,13 @@ $(document).ready(function(){
   var scrollTop = 0;
   $(window).scroll(function(){
     scrollTop = $(window).scrollTop();  
-    // console.log(scrollTop);  
     if (scrollTop >= 100) {
       $('.navbar').addClass('scrolled-nav');
     } else if (scrollTop < 100) {
       $('.navbar').removeClass('scrolled-nav');
     } 
     
-    if(scrollTop >= 700){
+    if(scrollTop >= 600){
     	$('#video').addClass('isShowing');
     }
     if(scrollTop >= 1100){
